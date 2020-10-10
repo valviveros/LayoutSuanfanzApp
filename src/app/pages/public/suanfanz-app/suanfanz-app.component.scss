@@ -133,6 +133,59 @@ $titleFont: sfProTextMedium;
             width: 100%;
             height: calc(100% - 108px);
             background: white;
+            .inboxChat1 {
+                width: 100%;
+                height: 72px;
+                background: white;
+                display: flex;
+                &:hover {
+                    background: #F5F5F5;
+                }
+                .profileInboxContainer {
+                    width: 77px;
+                    height: 72px;
+                    padding: 0 15px 0 13px;
+                    display: flex;
+                    align-items: center;
+                    .profileInbox {
+                        width: 49px;
+                        height: 49px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+                .inboxInfoContainer {
+                    height: 72px;
+                    padding: 0 15px 0 0;
+                    margin-right: 6px;
+                    display: flex;
+                    justify-content: center;
+                    flex-flow: column;
+                    flex-grow: 1;
+                    border-bottom: 1px solid rgba($color: #919191, $alpha: 0.2);
+                    .namePersonChat {
+                        font-size: 16px;
+                        color: black;
+                        font-family: $titleFont;
+                        cursor: pointer;
+                    }
+                    .chatContainer {
+                        display: flex;
+                        flex-flow: row wrap;
+                        .chatStatus{
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 2px;
+                        }
+                        .chatPreview {
+                            font-size: 14px;
+                            color: #6F6F6F;
+                            font-family: $titleFont;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
     .rightBigContainer {
